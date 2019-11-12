@@ -3754,14 +3754,6 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Age_Unknown -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Age_Unknown">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Allergic_Disorder -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Allergic_Disorder">
@@ -3823,46 +3815,6 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_20_to_29 -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_20_to_29">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_30_to_39 -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_30_to_39">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_40_to_49 -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_40_to_49">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_50_to_59 -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_50_to_59">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_60_and_Older -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_60_and_Older">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Aunt -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Aunt">
@@ -3877,14 +3829,6 @@
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Autistic_Disorder">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Diagnosis"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Before_age_20 -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Before_age_20">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
     </owl:Class>
     
 
@@ -4509,9 +4453,9 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#In_Infancy -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Không_Xác_Định -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#In_Infancy">
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Không_Xác_Định">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
     </owl:Class>
     
@@ -4549,6 +4493,14 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Lupus_erythematosus">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Diagnosis"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Lơn_Hơn_60 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Lơn_Hơn_60">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
     </owl:Class>
     
 
@@ -5070,6 +5022,14 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Nhỏ_Hơn_20 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Nhỏ_Hơn_20">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Niece -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Niece">
@@ -5383,6 +5343,14 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Thời_Thơ_Ấu -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Thời_Thơ_Ấu">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Tobacco_Smoking_Behavior -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Tobacco_Smoking_Behavior">
@@ -5452,6 +5420,38 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_20_Đến_29 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_20_Đến_29">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_30_Đến_39 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_30_Đến_39">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_40_Đến_49 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_40_Đến_49">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_50_Đến_59 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_50_Đến_59">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Uncle -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Uncle">
@@ -5497,7 +5497,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Age_Unknown_1 -->
 
     <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Age_Unknown_1">
-        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Age_Unknown"/>
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Không_Xác_Định"/>
     </owl:NamedIndividual>
     
 
@@ -5505,7 +5505,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_20_to_29_1 -->
 
     <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_20_to_29_1">
-        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_20_to_29"/>
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_20_Đến_29"/>
     </owl:NamedIndividual>
     
 
@@ -5513,7 +5513,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_30_to_39_1 -->
 
     <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_30_to_39_1">
-        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_30_to_39"/>
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_30_Đến_39"/>
     </owl:NamedIndividual>
     
 
@@ -5521,7 +5521,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_40_to_49_1 -->
 
     <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_40_to_49_1">
-        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_40_to_49"/>
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_40_Đến_49"/>
     </owl:NamedIndividual>
     
 
@@ -5529,7 +5529,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_50_to_59_1 -->
 
     <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_50_to_59_1">
-        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_50_to_59"/>
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_50_Đến_59"/>
     </owl:NamedIndividual>
     
 
@@ -5537,7 +5537,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_60_and_Older_1 -->
 
     <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_60_and_Older_1">
-        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#At_Age_60_and_Older"/>
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Lơn_Hơn_60"/>
     </owl:NamedIndividual>
     
 
@@ -5545,7 +5545,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Before_age_20_1 -->
 
     <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Before_age_20_1">
-        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Before_age_20"/>
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Nhỏ_Hơn_20"/>
     </owl:NamedIndividual>
     
 
@@ -5553,7 +5553,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#In_Infancy_1 -->
 
     <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#In_Infancy_1">
-        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#In_Infancy"/>
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Thời_Thơ_Ấu"/>
     </owl:NamedIndividual>
     
 
