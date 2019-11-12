@@ -3754,67 +3754,6 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Allergic_Disorder -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Allergic_Disorder">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Alzheimers_Disease -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Alzheimers_Disease">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c/w Snomed CT term Alzheimer&apos;s Disease</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Anxiety -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Anxiety">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Arthritis -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Arthritis">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Arthropathy -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Arthropathy">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Aspergers_Disorder -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Aspergers_Disorder">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term is Asperger&apos;s Disorder</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Asthma -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Asthma">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Aunt -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Aunt">
@@ -3824,37 +3763,10 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Autistic_Disorder -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Autistic_Disorder">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Benign_Neoplasm_of_Brain -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Benign_Neoplasm_of_Brain">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Bipolar_Disorder -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Bipolar_Disorder">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Mental_Disorder"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Blood_Clot -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Blood_Clot">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
@@ -3869,37 +3781,72 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cardiac_Dysrhythmia -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Alzheimer -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cardiac_Dysrhythmia">
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Alzheimer">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT concept</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c/w Snomed CT term Alzheimer&apos;s Disease</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Carpal_Tunnel_Syndrome -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Ban_Đỏ -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Carpal_Tunnel_Syndrome">
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Ban_Đỏ">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cerebrovascular_Accident -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Bạch_Cầu -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cerebrovascular_Accident">
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Bạch_Cầu">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cholecystitis -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Neoplastic_Ác_Tính -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cholecystitis">
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Neoplastic_Ác_Tính">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Parkinson -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Parkinson">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Phênylkêtô_Niệu -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Phênylkêtô_Niệu">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Về_Thận -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Về_Thận">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Động_Mạch_Vành -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Bệnh_Động_Mạch_Vành">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
 
@@ -3915,36 +3862,10 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Classical_Phenylketonuria -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Classical_Phenylketonuria">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Coronary_Artery_Disease -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Coronary_Artery_Disease">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cousin -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cousin">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Third_Degree_Relation"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cyst_of_Breast -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cyst_of_Breast">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
 
@@ -3981,51 +3902,6 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Degeneration_of_Intervertebral_Disc -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Degeneration_of_Intervertebral_Disc">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Depressive_Disorder -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Depressive_Disorder">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Developmental_Disorder -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Developmental_Disorder">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term. Parent term for developmental mental disorder.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Diabetes_Mellitus -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Diabetes_Mellitus">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Disorder_of_Thyroid_Gland -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Disorder_of_Thyroid_Gland">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Dấu_Hiệu_Hoặc_Triệu_Chứng -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Dấu_Hiệu_Hoặc_Triệu_Chứng">
@@ -4040,15 +3916,6 @@
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Eating_Disorder">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Mental_Disorder"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Endometriosis -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Endometriosis">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
@@ -4082,15 +3949,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Infertility -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Infertility">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed  CT term</rdfs:comment>
     </owl:Class>
     
 
@@ -4370,44 +4228,9 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Heart_Failure -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Hen_Suyễn -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Heart_Failure">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Heart_Valve_Disorder -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Heart_Valve_Disorder">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Hepatic_failure -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Hepatic_failure">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Hypercholesterolemia -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Hypercholesterolemia">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Hypertensive_Disorder -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Hypertensive_Disorder">
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Hen_Suyễn">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
@@ -4428,6 +4251,93 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Hành_Vi_Hút_Thuốc_Lá">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Hành_Vi"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT terrm</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Tai -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Tai">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Tử_Cung -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Tử_Cung">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Ác_Tính_Của_Buồng_Trứng -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Ác_Tính_Của_Buồng_Trứng">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Ác_Tính_Của_Da -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Ác_Tính_Của_Da">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Ác_Tính_Của_Gan -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Ác_Tính_Của_Gan">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Ác_Tính_Của_Tuyến_Giáp -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Ác_Tính_Của_Tuyến_Giáp">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Ác_Tính_Nguyên_Phát_Của_Xương -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Ác_Tính_Nguyên_Phát_Của_Xương">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Ác_Tính_Thứ_Cấp_Của_Xương -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Hạch_Ác_Tính_Thứ_Cấp_Của_Xương">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Hội_Chứng_Suy_Thận -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Hội_Chứng_Suy_Thận">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Hội_Chứng_Ống_Cổ_Tay -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Hội_Chứng_Ống_Cổ_Tay">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
 
@@ -4471,6 +4381,15 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Không_Dung_Nạp_Lactose -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Không_Dung_Nạp_Lactose">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Không_Xác_Đinh -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Không_Xác_Đinh">
@@ -4490,36 +4409,45 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Kidney_Disease -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Khối_U_Ác_Tính_Của_Phổi -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Kidney_Disease">
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Khối_U_Ác_Tính_Của_Phổi">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Lactose_Intolerance -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Khối_U_Ác_Tính_Của_Ruột -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Lactose_Intolerance">
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Khối_U_Ác_Tính_Của_Ruột">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Leukemia -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Khối_U_Ác_Tính_Của_Tuyến_Tiền_Liệt -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Leukemia">
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Khối_U_Ác_Tính_Của_Tuyến_Tiền_Liệt">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Lupus_erythematosus -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Khối_Ú_Ác_Tính_Của_Dạ_Dày -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Lupus_erythematosus">
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Khối_Ú_Ác_Tính_Của_Dạ_Dày">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Khối_Ú_Ác_Tính_Của_Đại_Tràng -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Khối_Ú_Ác_Tính_Của_Đại_Tràng">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
@@ -4530,6 +4458,15 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Lơn_Hơn_60">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Lạc_Nội_Mạc_Tử_Cung -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Lạc_Nội_Mạc_Tử_Cung">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
 
@@ -4596,14 +4533,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Melanoma -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Melanoma">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Neoplasm_of_Breast -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Neoplasm_of_Breast">
@@ -4618,94 +4547,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Neoplasm_of_Breast_Bilateral">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Neoplasm_of_Breast"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Combination of 2 SNOMED CT terms: malignant neoplasm of breast AND bilateral</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Neoplasm_of_Liver -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Neoplasm_of_Liver">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Neoplasm_of_Ovary -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Neoplasm_of_Ovary">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Neoplasm_of_Skin -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Neoplasm_of_Skin">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Neoplasm_of_Thyroid -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Neoplasm_of_Thyroid">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Neoplastic_Disease -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Neoplastic_Disease">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Tumor_of_Colon -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Tumor_of_Colon">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Tumor_of_Lung -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Tumor_of_Lung">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Tumor_of_Prostate -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Tumor_of_Prostate">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Tumor_of_Stomach -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_Tumor_of_Stomach">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_tumor_of_intestine -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Malignant_tumor_of_intestine">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
 
@@ -4844,45 +4685,9 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Meningitis -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Meningitis">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Mental_Disorder -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Mental_Disorder">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Migraine -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Migraine">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Multiple_Sclerosis -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Multiple_Sclerosis">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Myocardial_Infarction -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Myocardial_Infarction">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
@@ -5021,24 +4826,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Neoplasm_of_Ear -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Neoplasm_of_Ear">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Neoplasm_of_Uterus -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Neoplasm_of_Uterus">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Nephew -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Nephew">
@@ -5065,6 +4852,15 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Nhồi_Máu_Cơ_Tim -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Nhồi_Máu_Cơ_Tim">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Niece -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Niece">
@@ -5082,29 +4878,11 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Overweight_Or_Obesity -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Overweight_Or_Obesity">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">combination of two Snomed CT terms, overweight (sign or symptom) and obesity (dx)</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Parent_Relation -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Parent_Relation">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Quan_Hệ_Gia_Đình"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Parkinsonism -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Parkinsonism">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term.</rdfs:comment>
     </owl:Class>
     
 
@@ -5244,27 +5022,9 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Polyp_of_Colon -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Polyp_Đại_Tràng -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Polyp_of_Colon">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Prematurity_of_fetus -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Prematurity_of_fetus">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Primary_Malignant_Neoplasm_of_Bone -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Primary_Malignant_Neoplasm_of_Bone">
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Polyp_Đại_Tràng">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
@@ -5279,9 +5039,89 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Renal_Failure_Syndrome -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Aspergers -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Renal_Failure_Syndrome">
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Aspergers">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term is Asperger&apos;s Disorder</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Dị_Ứng -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Dị_Ứng">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Lo_Âu -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Lo_Âu">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Nhịm_Tim -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Nhịm_Tim">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT concept</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Phát_Triển -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Phát_Triển">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term. Parent term for developmental mental disorder.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Trầm_Cảm -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Trầm_Cảm">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Tuyến_Giáp -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Tuyến_Giáp">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Tăng_Huyết_Áp -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Tăng_Huyết_Áp">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Tự_Kỷ -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Tự_Kỷ">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Van_Tim -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Rối_Loạn_Van_Tim">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
     </owl:Class>
     
@@ -5296,10 +5136,38 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Secondary_Malignant_Neoplasm_of_Bone -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Sinh_Non -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Secondary_Malignant_Neoplasm_of_Bone">
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Sinh_Non">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Suy_Gan -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Suy_Gan">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Suy_Tim -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Suy_Tim">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Tai_Biến_Mạch_Máu_Não -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Tai_Biến_Mạch_Máu_Não">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
 
@@ -5312,10 +5180,37 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Thoái_Hóa_Khớp -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Thoái_Hóa_Khớp">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Thoái_Hõa_Đĩa_Đệm -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Thoái_Hõa_Đĩa_Đệm">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Thời_Thơ_Ấu -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Thời_Thơ_Ấu">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Thừa_Cân_Hoặc_Béo_Phì -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Thừa_Cân_Hoặc_Béo_Phì">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">combination of two Snomed CT terms, overweight (sign or symptom) and obesity (dx)</rdfs:comment>
     </owl:Class>
     
 
@@ -5402,6 +5297,15 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Tăng_cholesterol_Máu -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Tăng_cholesterol_Máu">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_20_Đến_29 -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_20_Đến_29">
@@ -5434,11 +5338,62 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#U_Nang_Vú -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#U_Nang_Vú">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#U_Ác_Tính -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#U_Ác_Tính">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Uncle -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Uncle">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Male_Blood_Relation"/>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Second_Degree_Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Viêm_Khớp -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Viêm_Khớp">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Viêm_Màng_Não -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Viêm_Màng_Não">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Viêm_Túi_Mật -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Viêm_Túi_Mật">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Vô_Sinh_Ở_Nữ -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Vô_Sinh_Ở_Nữ">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed  CT term</rdfs:comment>
     </owl:Class>
     
 
@@ -5460,9 +5415,54 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Đa_Xơ_Cứng -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Đa_Xơ_Cứng">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Đau_Nửa_Đầu -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Đau_Nửa_Đầu">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Đái_Tháo_Đường -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Đái_Tháo_Đường">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Bướu_Lành_(Não) -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Bướu_Lành_(Não)">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Huyết_Khối_(Cục_Máu_Đông) -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Huyết_Khối_(Cục_Máu_Đông)">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
     
 
 
