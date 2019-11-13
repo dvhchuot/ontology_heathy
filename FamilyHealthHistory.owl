@@ -3754,20 +3754,138 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Aunt -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_chị_em_họ_bên_ngoại_của_bên_ngoại -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Aunt">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Second_Degree_Relation"/>
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_chị_em_họ_bên_ngoại_của_bên_ngoại">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_chị_em_họ_của_bên_ngoại"/>
     </owl:Class>
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Blood_Relation -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_chị_em_họ_bên_ngoại_của_bên_nội -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Blood_Relation">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Quan_Hệ_Gia_Đình"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consistent with Snomed CT term Relative</rdfs:comment>
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_chị_em_họ_bên_ngoại_của_bên_nội">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_chị_em_họ_của_bên_ngoại"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_chị_em_họ_của_bên_ngoại -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_chị_em_họ_của_bên_ngoại">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cousin"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_em_sinh_đôi -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_em_sinh_đôi">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_em_trai_ruột"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Sibling"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_sinh_đôi"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_em_sinh_đôi_giống_hệt_nhau -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_em_sinh_đôi_giống_hệt_nhau">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_em_sinh_đôi"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Identical_Twin_Sibling"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_em_sinh_đôi_không_giống_nhau -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_em_sinh_đôi_không_giống_nhau">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_em_sinh_đôi"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Fraternal_Twin_Sibling"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_em_trai_ruột -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Anh_em_trai_ruột">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Male_Blood_Relation"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Full_Sibling"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_ruột"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Bà_cô -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Bà_cô">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Third_Degree_Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Bà_cô_bên_ngoại_của_bên_ngoại -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Bà_cô_bên_ngoại_của_bên_ngoại">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Bà_cô"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Bà_cô_bên_ngoại_của_bên_nội -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Bà_cô_bên_ngoại_của_bên_nội">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Bà_cô"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Bà_cô_bên_nội_của_bên_ngoại -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Bà_cô_bên_nội_của_bên_ngoại">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Bà_cô"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Bà_cô_bên_nội_của_bên_nội -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Bà_cô_bên_nội_của_bên_nội">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Bà_cô"/>
     </owl:Class>
     
 
@@ -3842,6 +3960,80 @@
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cha_ruột -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cha_ruột">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Male_Blood_Relation"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Parent"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cháu_của_cô_chú -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cháu_của_cô_chú">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Third_Degree_Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cháu_của_ông_bà -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cháu_của_ông_bà">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Grandchild"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cháu_gái_con_của_anh_chị_em -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cháu_gái_con_của_anh_chị_em">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Second_Degree_Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Chú -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Chú">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Male_Blood_Relation"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Second_Degree_Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Chú_bên_ngoại -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Chú_bên_ngoại">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chú"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Chú_bên_nội -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Chú_bên_nội">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chú"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán">
@@ -3853,7 +4045,130 @@
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Chắt -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Chắt">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Grandchild"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_khác_cha_mẹ -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_khác_cha_mẹ">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Half_Sibling"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Half_Brother"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_ruột -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_ruột">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Full_Sibling"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_sinh_đôi -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_sinh_đôi">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_ruột"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Sibling"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_sinh_đôi_giống_hệt_nhau -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_sinh_đôi_giống_hệt_nhau">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_sinh_đôi"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Identical_Twin_Sibling"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+<<<<<<< HEAD
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_sinh_đôi_khác_nhau -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_sinh_đôi_khác_nhau">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_sinh_đôi"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Fraternal_Twin_Sibling"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Con_ruột -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Con_ruột">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Child"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Son"/>
+=======
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Fraternal_Twin_Sibling -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Fraternal_Twin_Sibling">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Sibling"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Identical_Twin_Sibling"/>
+>>>>>>> f70ba8fcfdae12fc367166cf1ef423458a577db7
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
+    </owl:Class>
+    
+
+
+<<<<<<< HEAD
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cousin -->
+=======
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Grand_Aunt -->
+>>>>>>> f70ba8fcfdae12fc367166cf1ef423458a577db7
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cousin">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Third_Degree_Relation"/>
@@ -3884,11 +4199,113 @@
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cô -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cô">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Second_Degree_Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cô_bên_ngoại -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cô_bên_ngoại">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cô"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cô_bên_nội -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cô_bên_nội">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cô"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cấy_Thận -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cấy_Thận">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term, under Procedure hierarchy</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Grandparent"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà_bên_ngoại -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà_bên_ngoại">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_Grandparent"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà_bên_ngoại_của_bên_ngoại -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà_bên_ngoại_của_bên_ngoại">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà_bên_ngoại_của_bên_nội -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà_bên_ngoại_của_bên_nội">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà_bên_nội -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà_bên_nội">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_Grandparent"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà_bên_nội_của_bên_ngoại -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà_bên_nội_của_bên_ngoại">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà_bên_nội_của_bên_nội -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà_bên_nội_của_bên_nội">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cụ_bà"/>
     </owl:Class>
     
 
@@ -3909,28 +4326,13 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Blood_Relation"/>
                     <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Relation"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Quan_hệ_huyết_thống"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Male_Blood_Relation"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: define this class?</owl:versionInfo>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Cousin -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Cousin">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cousin"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -3962,7 +4364,7 @@
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#First_Degree_Relation -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#First_Degree_Relation">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Blood_Relation"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Quan_hệ_huyết_thống"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consistent with Snomed CT term First Degree Blood Relative</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Def: Any relative who is one meiosis away from a particular individual in a family (i.e., parent, sibling, offspring). Definition from GeneTests.</rdfs:comment>
     </owl:Class>
@@ -3979,28 +4381,10 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Grand_Aunt -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Grand_Aunt">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Third_Degree_Relation"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Grand_Nephew -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Grand_Nephew">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Male_Blood_Relation"/>
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Third_Degree_Relation"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Grand_Niece -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Grand_Niece">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Third_Degree_Relation"/>
     </owl:Class>
     
@@ -4019,21 +4403,6 @@
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Grandchild">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Second_Degree_Relation"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Granddaughter -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Granddaughter">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Grandchild"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -4069,21 +4438,6 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Granddaughter -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Granddaughter">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Grandchild"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Grandfather -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Grandfather">
@@ -4092,21 +4446,6 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Grandparent"/>
                     <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Male_Blood_Relation"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Grandmother -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Grandmother">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Grandparent"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -4148,7 +4487,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Half_Sister"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
@@ -4160,22 +4498,6 @@
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Second_Degree_Relation"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consistent with GeneTests definition of second degree relative
 Snomed CT term, but Snomed places under first degree blood relative</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Half_Sister -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Half_Sister">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Half_Sibling"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
 
@@ -4407,8 +4729,8 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Blood_Relation"/>
                     <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Male_Relation"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Quan_hệ_huyết_thống"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -4455,14 +4777,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_Aunt -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_Aunt">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Aunt"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_Grandfather -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_Grandfather">
@@ -4470,21 +4784,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Male_Blood_Relation"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_Grandparent"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_Grandmother -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_Grandmother">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
                     <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_Grandparent"/>
                 </owl:intersectionOf>
             </owl:Class>
@@ -4501,34 +4800,10 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_Uncle -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_Uncle">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Uncle"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_female_cousin -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_female_cousin">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Cousin"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_male_cousin -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_male_cousin">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Male_Cousin"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_maternal_grandaunt -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_maternal_grandaunt">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Grand_Aunt"/>
     </owl:Class>
     
 
@@ -4549,22 +4824,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_maternal_great_grandmother -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_maternal_great_grandmother">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Grandmother"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_paternal_grandaunt -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_paternal_grandaunt">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Grand_Aunt"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_paternal_granduncle -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_paternal_granduncle">
@@ -4581,26 +4840,17 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_paternal_great_grandmother -->
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Mẹ_ruột -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Maternal_paternal_great_grandmother">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Grandmother"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Brother -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Brother">
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Mẹ_ruột">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Male_Blood_Relation"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Full_Sibling"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Parent"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Sister"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
@@ -4615,60 +4865,11 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Daughter -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Daughter">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Child"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Son"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Father -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Father">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Male_Blood_Relation"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Parent"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Full_Sibling -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Full_Sibling">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#First_Degree_Relation"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consistent with Gene Tests definition of first degree relative, different than Snomed CT term Natural Sibling which is a parent term of natural half sibling.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Mother -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Mother">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Parent"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
 
@@ -4681,22 +4882,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#First_Degree_Relation"/>
                     <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Parent_Relation"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Sister -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Sister">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Full_Sibling"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -4774,15 +4959,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Niece -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Niece">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Second_Degree_Relation"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Non_Hodgkins_Lymphoma -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Non_Hodgkins_Lymphoma">
@@ -4809,14 +4985,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_Aunt -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_Aunt">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Aunt"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_Grandfather -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_Grandfather">
@@ -4824,21 +4992,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Male_Blood_Relation"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_Grandparent"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_Grandmother -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_Grandmother">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Blood_Relation"/>
                     <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_Grandparent"/>
                 </owl:intersectionOf>
             </owl:Class>
@@ -4855,22 +5008,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_Uncle -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_Uncle">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Uncle"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_female_cousin -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_female_cousin">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Female_Cousin"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_male_cousin -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_male_cousin">
@@ -4879,34 +5016,10 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_maternal_grandaunt -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_maternal_grandaunt">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Grand_Aunt"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_maternal_great_grandfather -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_maternal_great_grandfather">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Grandfather"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_maternal_great_grandmother -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_maternal_great_grandmother">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Grandmother"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_paternal_grandaunt -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_paternal_grandaunt">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Grand_Aunt"/>
     </owl:Class>
     
 
@@ -4927,14 +5040,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_paternal_great_grandmother -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Paternal_paternal_great_grandmother">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Great_Grandmother"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Polyp_Đại_Tràng -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Polyp_Đại_Tràng">
@@ -4948,6 +5053,15 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Quan_Hệ_Gia_Đình">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Quan_hệ_huyết_thống -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Quan_hệ_huyết_thống">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Quan_Hệ_Gia_Đình"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consistent with Snomed CT term Relative</rdfs:comment>
     </owl:Class>
     
 
@@ -5070,7 +5184,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Second_Degree_Relation -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Second_Degree_Relation">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Blood_Relation"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Quan_hệ_huyết_thống"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any relative who is two meioses away from a particular individual in a pedigree; a relative with whom one quarter of an individual&apos;s genes is shared (i.e., grandparent, grandchild, uncle, aunt, nephew, niece, half-sibling). Definition from GeneTests.</rdfs:comment>
     </owl:Class>
     
@@ -5115,7 +5229,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Third_Degree_Relation -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Third_Degree_Relation">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Blood_Relation"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Quan_hệ_huyết_thống"/>
     </owl:Class>
     
 
@@ -5180,43 +5294,10 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Brother -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Brother">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Brother"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Sibling"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Sister"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Sibling -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Sibling">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Full_Sibling"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Sister -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Sister">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Sister"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Sibling"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
@@ -5291,15 +5372,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#U_Ác_Tính">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Chẩn_Đoán"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Uncle -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Uncle">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Male_Blood_Relation"/>
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Second_Degree_Relation"/>
     </owl:Class>
     
 
