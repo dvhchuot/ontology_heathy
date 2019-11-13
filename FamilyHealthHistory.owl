@@ -3969,42 +3969,12 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Fraternal_Twin_Brother -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Fraternal_Twin_Brother">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Fraternal_Twin_Sibling"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Brother"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Fraternal_Twin_Sibling -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Fraternal_Twin_Sibling">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Sibling"/>
         <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Identical_Twin_Sibling"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Fraternal_Twin_Sister -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Fraternal_Twin_Sister">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Fraternal_Twin_Sibling"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Sister"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -4324,41 +4294,11 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Identical_Twin_Brother -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Identical_Twin_Brother">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Identical_Twin_Sibling"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Brother"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Identical_Twin_Sibling -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Identical_Twin_Sibling">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Sibling"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Identical_Twin_Sister -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Identical_Twin_Sister">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Identical_Twin_Sibling"/>
-                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Sister"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -5630,137 +5570,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_step_grandson"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_health_state"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_fam_hx_in_step_grandson"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_grandaunt"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cá_Nhân_Nam"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_grandnephew"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_step_mother"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_health_state"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_fam_hx_in_stepmother"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_step_sister"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
@@ -5923,6 +5732,49 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                         <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_maternal_male_cousin"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_granduncle"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cá_Nhân_Nam"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_grandnephew"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -6157,49 +6009,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_grandparent"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cá_Nhân_Nam"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_grandson"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_maternal_uncle"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
@@ -6406,6 +6215,49 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                         <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_maternal_uncle"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_great_grandfather"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cá_Nhân_Nam"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_great_grandson"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -6666,49 +6518,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_granduncle"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cá_Nhân_Nam"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_grandnephew"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_natural_father"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
@@ -6897,6 +6706,49 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                         <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_paternal_aunt"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_great_grandmother"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cá_Nhân_Nam"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_great_grandson"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -7112,49 +6964,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                         <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_maternal_maternal_great_grandfather"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#d"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_great_grandfather"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cá_Nhân_Nam"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_great_grandson"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -7402,6 +7211,49 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_half_aunt"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cá_Nhân_Nam"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_half_nephew"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_paternal_aunt"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
@@ -7476,92 +7328,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                         <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_paternal_male_cousin"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_great_grandmother"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cá_Nhân_Nam"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_great_grandson"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_half_aunt"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cá_Nhân_Nam"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_half_nephew"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -11903,6 +11669,49 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_aunt"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cá_Nhân_Nam"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_nephew"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_niece"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
@@ -12343,6 +12152,49 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_grandaunt"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cá_Nhân_Nam"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_grandnephew"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_paternal_maternal_grandaunt"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
@@ -12549,49 +12401,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                         <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_fam_hx_in_paternal_paternal_granduncle"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_aunt"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cá_Nhân_Nam"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_nephew"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -12826,6 +12635,49 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_grandparent"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Cá_Nhân_Nam"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_grandson"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_step_father"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
@@ -12986,6 +12838,94 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_fam_hx_in_step_grandmother"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_step_grandson"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_health_state"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_fam_hx_in_step_grandson"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_step_mother"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_health_state"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#has_fam_hx_in_stepmother"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
                     </rdf:Description>
