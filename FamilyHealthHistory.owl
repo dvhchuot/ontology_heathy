@@ -5325,7 +5325,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_40_Đến_49 -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_40_Đến_49">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Từ_50_Đến_59"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Độ_Tuổi"/>
     </owl:Class>
     
 
