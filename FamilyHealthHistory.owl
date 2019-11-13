@@ -4124,7 +4124,6 @@
     
 
 
-<<<<<<< HEAD
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_sinh_đôi_khác_nhau -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Chị_em_sinh_đôi_khác_nhau">
@@ -4152,23 +4151,12 @@
             </owl:Class>
         </owl:equivalentClass>
         <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Natural_Son"/>
-=======
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Fraternal_Twin_Sibling -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Fraternal_Twin_Sibling">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Twin_Sibling"/>
-        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Identical_Twin_Sibling"/>
->>>>>>> f70ba8fcfdae12fc367166cf1ef423458a577db7
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snomed CT term</rdfs:comment>
     </owl:Class>
     
 
 
-<<<<<<< HEAD
     <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Cousin -->
-=======
-    <!-- http://www.owl-ontologies.com/Ontology1172270693.owl#Grand_Aunt -->
->>>>>>> f70ba8fcfdae12fc367166cf1ef423458a577db7
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1172270693.owl#Cousin">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#Third_Degree_Relation"/>
