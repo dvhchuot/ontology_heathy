@@ -124,6 +124,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#trạng_thái_sức_khỏe_thuộc_về"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Cá_Nhân"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tình_Trạng_Sức_Khỏe"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bố_mẹ_ruột -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bố_mẹ_ruột">
@@ -852,16 +862,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tình_Trạng_Sức_Khỏe"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Trạng_Thái"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#trạng_thái_sức_khỏe_thuộc_về"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Cá_Nhân"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tình_Trạng_Sức_Khỏe"/>
     </owl:ObjectProperty>
     
 
@@ -2162,7 +2162,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Trạng_Thái"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tiêu_Cực"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_Cực"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_Cực_Nhưng_Đã_Được_Giải_Quyết_[fix]"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_Cực_Và_Đã_Được_Giải_Quyết"/>
     </owl:Class>
     
 
@@ -2626,7 +2626,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <owl:Class rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tiêu_Cực">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Trạng_Thái"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_Cực"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_Cực_Nhưng_Đã_Được_Giải_Quyết_[fix]"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_Cực_Và_Đã_Được_Giải_Quyết"/>
     </owl:Class>
     
 
@@ -2665,7 +2665,15 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
 
     <owl:Class rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_Cực">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Trạng_Thái"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_Cực_Nhưng_Đã_Được_Giải_Quyết_[fix]"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_Cực_Và_Đã_Được_Giải_Quyết"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_Cực_Và_Đã_Được_Giải_Quyết -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_Cực_Và_Đã_Được_Giải_Quyết">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Trạng_Thái"/>
     </owl:Class>
     
 
@@ -2909,14 +2917,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_Cực_Nhưng_Đã_Được_Giải_Quyết_[fix] -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_Cực_Nhưng_Đã_Được_Giải_Quyết_[fix]">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Trạng_Thái"/>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2931,8 +2931,9 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan10 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Cá_Nhân_Nam"/>
+        <có_bệnh rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#benhso1"/>
         <có_cháu rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan11"/>
-        <có_tình_trạng_sức_khỏe rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Không_xác_định"/>
         <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">52</có_độ_tuổi_hiện_tại>
         <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vũ Thị Thoa</họ_và_tên>
     </owl:NamedIndividual>
@@ -2942,8 +2943,8 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan11 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan11">
+        <có_bệnh rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#benhso2"/>
         <có_con_ruột rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan3"/>
-        <có_tình_trạng_sức_khỏe rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_cực"/>
         <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">42</có_độ_tuổi_hiện_tại>
         <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Đặng Thị Dung</họ_và_tên>
     </owl:NamedIndividual>
@@ -2962,8 +2963,8 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan14 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan14">
+        <có_bệnh rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tiêu_cực"/>
         <có_cháu rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan20"/>
-        <có_tình_trạng_sức_khỏe rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tiêu_cực"/>
         <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</có_độ_tuổi_hiện_tại>
         <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bùi Quốc Khánh</họ_và_tên>
     </owl:NamedIndividual>
@@ -2974,7 +2975,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan15">
         <có_anh_ruột rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan5"/>
-        <có_tình_trạng_sức_khỏe rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tiêu_cực"/>
+        <có_bệnh rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tiêu_cực"/>
         <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</có_độ_tuổi_hiện_tại>
         <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nguyễn Văn Lộc</họ_và_tên>
     </owl:NamedIndividual>
@@ -2984,8 +2985,8 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan16 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan16">
+        <có_bệnh rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_cực"/>
         <có_cháu_chắt rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan16"/>
-        <có_tình_trạng_sức_khỏe rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_cực"/>
         <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</có_độ_tuổi_hiện_tại>
         <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bùi Lâm Anh</họ_và_tên>
     </owl:NamedIndividual>
@@ -3032,6 +3033,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan3 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Cá_Nhân_Nam"/>
         <có_con_trai_ruột rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#canhan2"/>
         <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</có_độ_tuổi_hiện_tại>
         <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Đặng Văn Hùng</họ_và_tên>
@@ -3042,6 +3044,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan4 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Cá_Nhân_Nam"/>
         <có_bố_ruột rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan7"/>
         <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</có_độ_tuổi_hiện_tại>
         <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hoàng Đình Thi</họ_và_tên>
@@ -3070,6 +3073,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan7 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Cá_Nhân_Nam"/>
         <có_con_trai_ruột rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan4"/>
         <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">54</có_độ_tuổi_hiện_tại>
         <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hoàng Ngọc Trung</họ_và_tên>
@@ -3080,8 +3084,10 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan8 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan8">
-        <có_bố_ruột rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan8"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Cá_Nhân_Nam"/>
+        <chết_ở_tuổi rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tuôi_70"/>
         <có_cháu_trai rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#canhan2"/>
+        <có_con_trai_ruột rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan3"/>
         <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90</có_độ_tuổi_hiện_tại>
         <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phạm Văn Thắng</họ_và_tên>
     </owl:NamedIndividual>
@@ -3102,7 +3108,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Canhan1">
         <rdf:type rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Cá_Nhân_Nam"/>
         <có_anh_trai_sinh_đôi rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan18"/>
-        <có_tình_trạng_sức_khỏe rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Không_xác_định"/>
+        <có_bệnh rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#benhso1"/>
         <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</có_độ_tuổi_hiện_tại>
         <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bùi Đăng Cường</họ_và_tên>
     </owl:NamedIndividual>
@@ -3149,6 +3155,14 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tuôi_70 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tuôi_70">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Lơn_Hơn_Hoặc_Bằng_60"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_cực -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_cực">
@@ -3157,10 +3171,10 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
-    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_cực_nhưng_đã_được_giải_quyết -->
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_cực_và_đã_được_giải_quyết -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_cực_nhưng_đã_được_giải_quyết">
-        <rdf:type rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_Cực_Nhưng_Đã_Được_Giải_Quyết_[fix]"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_cực_và_đã_được_giải_quyết">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_Cực_Và_Đã_Được_Giải_Quyết"/>
     </owl:NamedIndividual>
     
 
@@ -3197,9 +3211,29 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#benhso1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#benhso1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Bướu_Lành_(Não)"/>
+        <có_trạng_thái rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tiêu_cực"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#benhso2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#benhso2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Nhồi_Máu_Cơ_Tim"/>
+        <có_trạng_thái rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_cực"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#canhan2 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#canhan2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Cá_Nhân_Nam"/>
+        <có_bố_ruột rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan3"/>
         <có_ông_nội rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan8"/>
         <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</có_độ_tuổi_hiện_tại>
         <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phạm Tuấn Anh</họ_và_tên>
@@ -4085,9 +4119,9 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_anh_ruột"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -4096,9 +4130,9 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_anh_ruột"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -4393,9 +4427,9 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bà_cô_bên_ngoại_nhà_ngoại"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -4404,9 +4438,9 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bà_cô_bên_ngoại_nhà_ngoại"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -4437,9 +4471,9 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bà_cô_bên_ngoại_nhà_nội"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -4448,9 +4482,9 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bà_cô_bên_ngoại_nhà_nội"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -4492,7 +4526,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
                                 <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
                                 <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
                             </rdf:Description>
@@ -4525,9 +4559,9 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bà_cô_bên_nội_nhà_nội"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -4536,9 +4570,9 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bà_cô_bên_nội_nhà_nội"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -4553,6 +4587,50 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_bà_cô_bên_nội_của_nhà_nội"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bà_ngoại"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#fam_hx_trong_gia_đình_bà_ngoại"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
                     </rdf:Description>
@@ -4613,9 +4691,9 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bà_ngoại"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -4624,9 +4702,9 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bà_nội"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -4640,7 +4718,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#fam_hx_trong_gia_đình_bà_ngoại"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#fam_hx_trong_gia_đình_bà_nội"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
                     </rdf:Description>
@@ -4701,7 +4779,95 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bà_nội"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bố_ruột"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_bố_ruột"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_chắt_gái"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cháu_chắt_gái"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_chắt_trai"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
                     </rdf:Description>
@@ -4712,7 +4878,7 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
                                 <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
                                 <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
                             </rdf:Description>
@@ -4728,7 +4894,887 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#fam_hx_trong_gia_đình_bà_nội"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cháu_chắt_trai"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_gái"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cháu_gái"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_gái_họ"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cháu_gái"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_gái_họ"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cháu_gái_họ"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_trai"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cháu_trai"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_trai_họ"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cháu_trai"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_trai_họ"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#fam_hx_trong_gia_đình_cháu_trai_họ"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_chú_bên_ngoại"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_chú_nhà_ngoại"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_chú_bên_nội"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_chú_nhà_nội"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_chị_ruột"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_chị_gái_ruột"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_con_gái_ruột"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_con_gái_ruột"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_con_trai_ruột"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_con_trai_ruột"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cô_nhà_ngoại"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cô_bên_ngoại"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cô_nhà_nội"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cô_bên_nội"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_mẹ_ruột"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_mẹ_ruột"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_ông_chú_bên_ngoại_nhà_ngoại"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_ông_chú_bên_ngoại_nhà_ngoại"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_ông_chú_bên_ngoại_nhà_nội"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_ông_chú_bên_ngoại_nhà_nội"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_ông_chú_bên_nội_nhà_ngoại"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_ông_chú_bên_nội_nhà_ngoại"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_ông_chú_bên_nội_nhà_nội"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_ông_chú_bên_nội_nhà_nội"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_ông_ngoại"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#fam_hx_trong_gia_đình_ông_ngoại"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_ông_nội"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bệnh"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#fam_hx_trong_gia_đình_ông_nội"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
                     </rdf:Description>
@@ -5061,50 +6107,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_bố_ruột"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_bố_ruột"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_chị_ruột"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#f"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#s"/>
@@ -5364,490 +6366,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_chắt_gái"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cháu_chắt_gái"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_chắt_trai"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cháu_chắt_trai"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_gái"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cháu_gái"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_gái_họ"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cháu_gái"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_gái_họ"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cháu_gái_họ"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_trai"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cháu_trai"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_trai_họ"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cháu_trai"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cháu_trai_họ"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#fam_hx_trong_gia_đình_cháu_trai_họ"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_chú_bên_ngoại"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_chú_nhà_ngoại"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_chú_bên_nội"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_chú_nhà_nội"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_chị_ruột"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_chị_gái_ruột"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_chị_ruột"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
@@ -5980,182 +6498,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_con_gái_ruột"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_con_gái_ruột"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_con_trai_ruột"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_con_trai_ruột"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cô_nhà_ngoại"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cô_bên_ngoại"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cô_nhà_nội"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_cô_bên_nội"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_mẹ_ruột"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
@@ -6243,314 +6585,6 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_cụ_kỵ_bà_bên_ngoại_nhà_ngoại"/>
                         <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
                         <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#d"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_mẹ_ruột"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_mẹ_ruột"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_ông_chú_bên_ngoại_nhà_ngoại"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_ông_chú_bên_ngoại_nhà_ngoại"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_ông_chú_bên_ngoại_nhà_nội"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_ông_chú_bên_ngoại_nhà_nội"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_ông_chú_bên_nội_nhà_ngoại"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_ông_chú_bên_nội_nhà_ngoại"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_ông_chú_bên_nội_nhà_nội"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_fam_hx_trong_gia_đình_ông_chú_bên_nội_nhà_nội"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_ông_ngoại"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#fam_hx_trong_gia_đình_ông_ngoại"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_ông_nội"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#có_tình_trạng_sức_khỏe"/>
-                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#b"/>
-                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#fam_hx_trong_gia_đình_ông_nội"/>
-                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#a"/>
-                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1172270693.owl#c"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
