@@ -2928,10 +2928,181 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
     
 
 
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan10">
+        <có_cháu rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan11"/>
+        <có_tình_trạng_sức_khỏe rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Không_xác_định"/>
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">52</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vũ Thị Thoa</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan11">
+        <có_con_ruột rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan3"/>
+        <có_tình_trạng_sức_khỏe rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_cực"/>
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">42</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Đặng Thị Dung</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan12">
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nguyễn Văn Khởi</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan14">
+        <có_cháu rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan20"/>
+        <có_tình_trạng_sức_khỏe rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tiêu_cực"/>
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bùi Quốc Khánh</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan15">
+        <có_anh_ruột rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan5"/>
+        <có_tình_trạng_sức_khỏe rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tiêu_cực"/>
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nguyễn Văn Lộc</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan16">
+        <có_cháu_chắt rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan16"/>
+        <có_tình_trạng_sức_khỏe rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Tích_cực"/>
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bùi Lâm Anh</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan17">
+        <có_anh_ruột rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan3"/>
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Đặng Quốc Bảo</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan18">
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hoàng Bảo Trọng</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan19">
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phạm Thị Nhàn</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan20">
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phạm Hải Băng</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan3">
+        <có_con_trai_ruột rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#canhan2"/>
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Đặng Văn Hùng</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan4">
+        <có_bố_ruột rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan7"/>
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hoàng Đình Thi</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan5">
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nguyễn Ngọc Phước</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan6">
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nguyễn Văn Cừ</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan7">
+        <có_con_trai_ruột rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan4"/>
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">54</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hoàng Ngọc Trung</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan8">
+        <có_bố_ruột rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan8"/>
+        <có_cháu_trai rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#canhan2"/>
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">90</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phạm Văn Thắng</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan9">
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">102</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bùi Đức Tập</họ_và_tên>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Canhan1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Canhan1">
         <rdf:type rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Cá_Nhân_Nam"/>
+        <có_anh_trai_sinh_đôi rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan18"/>
+        <có_tình_trạng_sức_khỏe rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Không_xác_định"/>
         <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</có_độ_tuổi_hiện_tại>
         <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bùi Đăng Cường</họ_và_tên>
     </owl:NamedIndividual>
@@ -3022,6 +3193,16 @@ Snomed CT term, but Snomed places under first degree blood relative</rdfs:commen
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Từ_50_đến_59_tuôi">
         <rdf:type rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#Từ_50_Đến_59"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#canhan2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#canhan2">
+        <có_ông_nội rdf:resource="http://www.semanticweb.org/xiet26/ontologies/2019/10/OntologyHealthFamilyhx.owl#CaNhan8"/>
+        <có_độ_tuổi_hiện_tại rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</có_độ_tuổi_hiện_tại>
+        <họ_và_tên rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phạm Tuấn Anh</họ_và_tên>
     </owl:NamedIndividual>
     
 
